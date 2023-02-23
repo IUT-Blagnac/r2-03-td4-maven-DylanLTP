@@ -46,19 +46,29 @@ class HelloJava {
 ----
 ====
 +
-. Une fois que vous avez réussi à compiler (`mvn compile`), lancez la fabrication d'une version exécutable :
+. Pour compiler l'application utilisez la commande :
++
+....
+mvn compile
+....
++
+. Ensuite, lancez la fabrication d'une version exécutable avec la commande :
 +
 ....
 mvn package
 ....
 +
-. Observez la création du fichier JAR et testez-le :
+. Pour générer la Javadoc du projet, vous pouvez exécuter la commande :
++
+....
+mvn javadoc:javadoc
+....
++
+. Pour tester la version exécutable, exécutez la commande :
++
 ....
 java -jar target/tp_qualite-1.0.jar
 ....
-
-.Et voilà!
-image::success2.png["Ca run!", width=80%]
 
 == Améliorations
 
