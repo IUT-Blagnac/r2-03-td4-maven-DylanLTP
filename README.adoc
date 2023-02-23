@@ -1,6 +1,28 @@
 = TP4 R2.03 Qualité - Projet Maven
 Dylan Latapie <dylan.ltp@gmail.com>
 v1, 2023-02-23 : Initial draft
+:icons: font
+:diagrams: .
+:experimental:
+:classroom-link: https://classroom.github.com/a/gWXnQmIT
+:imagesdir: images
+
+// Useful definitions
+:eclipse: http://www.eclipse.org[Eclipse]
+:intellij: https://www.jetbrains.com/idea/[IntelliJ]
+:maven: http://maven.apache.org/[Maven]
+:vscode: https://code.visualstudio.com/[VS Code]
+
+// Specific to GitHub
+ifdef::env-github[]
+:toc:
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:icongit: Git
+endif::[]
 
 //---------------------------------------------------------------
 === Utilisation du projet
