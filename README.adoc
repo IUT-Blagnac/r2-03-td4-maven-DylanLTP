@@ -32,7 +32,7 @@ NOTE: Lorsque vous exécutez `mvn package`, la javadoc se génère automatiqueme
 mvn javadoc:javadoc
 ....
 +
-NOTE: Lors de l'exécution de `mvn javadoc:javadoc`, la javadoc se genèrera dans le dossier target/site/apidocs.
+NOTE: Lors de l'exécution de `mvn javadoc:javadoc`, la javadoc se générera dans le dossier target/site/apidocs.
 
 . Pour tester la version exécutable, exécutez la commande :
 +
