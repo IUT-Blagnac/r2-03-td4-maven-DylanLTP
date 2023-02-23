@@ -1,5 +1,5 @@
 = TP4 R2.03 Qualité - Projet Maven
-Jean-Michel Bruel <dylan.ltp@gmail.com>
+Dylan Latapie <dylan.ltp@gmail.com>
 v1, 2022-02-20 : Initial draft
 :icons: font
 :diagrams: .
@@ -23,9 +23,6 @@ ifdef::env-github[]
 :warning-caption: :warning:
 :icongit: Git
 endif::[]
-
-// Tags
-image:https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg["Open in Visual Studio Code",link="https://classroom.github.com/online_ide?assignment_repo_id=7083920&assignment_repo_type=AssignmentRepo"]
 
 //---------------------------------------------------------------
 === 2ème compilation : construire une application
@@ -70,12 +67,3 @@ image::success2.png["Ca run!", width=80%]
 . Ajoutez les commentaires vus en dev.
 . Cherchez dans la documentation {maven} les commandes permettant de générer une documentation javadoc, et les adaptions à faire sur votre projet (et éventuellement `pom.xml`) afin que {maven} génère la documentation automatiquement pour vous.
 . Documentez votre projet: remplacez le contenu de ce fichier README.doc par les instructions de compilation, de documentation et de lancement de votre projet. 
-
-== Consignes et rendus
-
-Pour ce TP, il vous faudra simplement rendre le projet complet (`src`) ainsi que la dernière version du fichier `pom.xml` sur votre dépôt et la javadoc de votre code.
-
-[appendix]
-== Import dans Eclipse
-
-TO BE DONE...
