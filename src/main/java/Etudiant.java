@@ -22,9 +22,9 @@ public class Etudiant {
      * Constructeur avec paramètres pour créer un objet Etudiant
      * @param pfNom IN : nom de l'étudiant
      * @param pfPrenom IN : prénom de l'étudiant
-     * @param PfIne : INE de l'étudiant
-     * @param pfPromo : promo de l'étudiant
-     * @param pfAdresse : adresse de l'étudiant
+     * @param PfIne IN : INE de l'étudiant
+     * @param pfPromo IN : promo de l'étudiant
+     * @param pfAdresse IN : adresse de l'étudiant
      */
     public Etudiant(String pfNom, String pfPrenom, String PfIne, char pfPromo, Adresse pfAdresse) {
         this.nom = pfNom;
