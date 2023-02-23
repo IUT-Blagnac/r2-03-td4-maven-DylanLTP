@@ -3,11 +3,7 @@
  * @author Dylan
  */
 public class ProgrammeEtudiant {
-    public static void main(String arguments[]) {
-        Adresse adr;
-        adr = new Adresse();
-        afficherAdresse(adr);
-        
+    public static void main(String arguments[]) {      
         Adresse adr2;
         adr2 = new Adresse(1, "Rue des Cocotiers", "31000", "Toulouse");
         afficherAdresse(adr2);
@@ -29,23 +25,37 @@ public class ProgrammeEtudiant {
         tabInfo[5] = new Etudiant ("Stolf", "Patricia", "v12", '1', adresse6);
         tabInfo[6] = new Etudiant ("Nonne", "Laurent", "p56", 'L', adresse7);
         int nbEtudiants = 7;
-    
-        for(int i = 0; i < nbEtudiants; i++) {
-          System.out.println("Nom : "+tabInfo[i].nom + " prénom " +tabInfo[i].prenom+ " adresse ");
-          afficherAdresse(tabInfo[i].adresse);
-        }
-    
+
         System.out.println("\n");
-        
-        for(int i = 0; i < nbEtudiants; i++) {
-          System.out.println("Nom : "+tabInfo[i].nom + " prénom " +tabInfo[i].prenom+ " adresse " + tabInfo[i].adresse.nomRue);
-        }
+
+        afficherEtudiantsAdrComplete(nbEtudiants, tabInfo);
     
         System.out.println("\n");
 
-        for(int i = 0; i < nbEtudiants; i++) {
-          System.out.println("Nom : "+tabInfo[i].nom + " prénom " +tabInfo[i].prenom+ " adresse " + tabInfo[i].adresse);
-        }
+        afficherEtudiantsNomRue(nbEtudiants, tabInfo);
+    }
+
+    /**
+     * Permet d'afficher les informations des étudiants et leur adresse complète
+     * @param pfNbEtudiants IN : le nombre d'étudiants
+     * @param pfTab IN : le tableau avec les informations des étudiants
+     */
+    public static void afficherEtudiantsAdrComplete(int pfNbEtudiants, Etudiant[] pfTab) {
+      for (int i = 0; i < pfNbEtudiants; i++) {
+        System.out.println("Nom : " + pfTab[i].nom + ", prénom : " + pfTab[i].prenom + ", adresse : ");
+        afficherAdresse(pfTab[i].adresse);
+      }
+    }
+
+    /**
+     * Permet d'afficher les informations des étudiants et le nom de la rue de leur adresse
+     * @param pfNbEtudiants IN : le nombre d'étudiants
+     * @param pfTab IN : le tableau avec les informations des étudiants
+     */
+    public static void afficherEtudiantsNomRue(int pfNbEtudiants, Etudiant[] pfTab) {
+      for (int i = 0; i < pfNbEtudiants; i++) {
+        System.out.println("Nom : " + pfTab[i].nom + ", prénom : " + pfTab[i].prenom + ", adresse : " + pfTab[i].adresse.nomRue);
+      }
     }
     
     /**
