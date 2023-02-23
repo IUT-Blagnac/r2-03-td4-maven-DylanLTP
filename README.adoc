@@ -6,21 +6,34 @@ v1, 2023-02-23 : Initial draft
 
 Pour utiliser le projet vous devez suivre les instructions suivantes :
 
-. Pour compiler l'application utilisez la commande :
+. Tout d'abord, nettoyez le projet Maven avec la commande :
++
+....
+mvn clean
+....
+
+. Ensuite, pour compiler l'application utilisez la commande :
 +
 ....
 mvn compile
 ....
-. Ensuite, lancez la fabrication d'une version exécutable avec la commande :
+
+. Lancez la fabrication d'une version exécutable avec la commande :
 +
 ....
 mvn package
 ....
-. Pour générer la Javadoc du projet, vous pouvez exécuter la commande :
++
+NOTE: Lorsque vous exécutez `mvn package`, la javadoc se génère automatiquement. Vous la trouverez sous forme de site dans le dossier target/apidocs ET sous forme de jar dans le dossier target (tp_qualite-1.0-javadoc.jar).
+
+. Pour générer la Javadoc du projet manuellement, vous pouvez exécuter la commande :
 +
 ....
 mvn javadoc:javadoc
 ....
++
+NOTE: Lors de l'exécution de `mvn javadoc:javadoc`, la javadoc se genèrera dans le dossier target/site/apidocs.
+
 . Pour tester la version exécutable, exécutez la commande :
 +
 ....
