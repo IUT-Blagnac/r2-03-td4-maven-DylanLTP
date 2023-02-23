@@ -10,7 +10,7 @@ public class Etudiant {
     /**
      * Constructeur par défaut pour créer un objet Etudiant
      */
-    Etudiant() {
+    public Etudiant() {
         this.nom = "";
         this.prenom = "";
         this.ine = "";
@@ -26,7 +26,7 @@ public class Etudiant {
      * @param pfPromo
      * @param pfAdresse
      */
-    Etudiant(String pfNom, String pfPrenom, String PfIne, char pfPromo, Adresse pfAdresse) {
+    public Etudiant(String pfNom, String pfPrenom, String PfIne, char pfPromo, Adresse pfAdresse) {
         this.nom = pfNom;
         this.prenom = pfPrenom;
         this.ine = PfIne;

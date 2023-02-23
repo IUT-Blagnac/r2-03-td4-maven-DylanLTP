@@ -9,7 +9,7 @@ public class Adresse {
     /**
      * Constructeur par défaut pour créer un objet Adresse
      */
-    Adresse() {
+    public Adresse() {
         this.numRue = 1;
         this.nomRue = "";
         this.codePostal = "";
@@ -23,7 +23,7 @@ public class Adresse {
      * @param pfCodePostal IN : Code postal de la ville
      * @param pfVille IN : Nom de la ville
      */
-    Adresse(int pfNumRue, String pfNomRue, String pfCodePostal, String pfVille) {
+    public Adresse(int pfNumRue, String pfNomRue, String pfCodePostal, String pfVille) {
         this.numRue = pfNumRue;
         this.nomRue = pfNomRue;
         this.codePostal = pfCodePostal;
