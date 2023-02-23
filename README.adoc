@@ -1,50 +1,11 @@
 = TP4 R2.03 Qualité - Projet Maven
 Dylan Latapie <dylan.ltp@gmail.com>
-v1, 2022-02-20 : Initial draft
-:icons: font
-:diagrams: .
-:experimental:
-:classroom-link: https://classroom.github.com/a/gWXnQmIT
-:imagesdir: images
-
-// Useful definitions
-:eclipse: http://www.eclipse.org[Eclipse]
-:intellij: https://www.jetbrains.com/idea/[IntelliJ]
-:maven: http://maven.apache.org/[Maven]
-:vscode: https://code.visualstudio.com/[VS Code]
-
-// Specific to GitHub
-ifdef::env-github[]
-:toc:
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-:icongit: Git
-endif::[]
+v1, 2023-02-23 : Initial draft
 
 //---------------------------------------------------------------
-=== 2ème compilation : construire une application
+=== Utilisation du projet
 
-On ne peut malheureusement pas exécuter d'application puisqu'on n'a pas de main.
-
-. Ajoutez un `main` dans la classe.
-+
-[%collapsible]
-====
-[source,java]
-----
-class HelloJava {	
-        public static void main(String[] args) {
-		System.out.println("Hello Blagnac");
-	}
-
-	public void afficherCancan(){
-	}
-}
-----
-====
+Pour utiliser le projet vous devez utiliser les instructions suivantes :
 +
 . Pour compiler l'application utilisez la commande :
 +
@@ -69,11 +30,3 @@ mvn javadoc:javadoc
 ....
 java -jar target/tp_qualite-1.0.jar
 ....
-
-== Améliorations
-
-. Reprenez un de vos exercices précédents et mettez les sources dans `src/java`.
-. Ajustez éventuellement le `pom.xml` pour que les étapes précédentes produisent les résultats escomptés. Pensez à vérifier que votre fichier .jar est exécutable. Que devez-vous corriger dans votre pom.xml ? Quelle est la commande pour le lancer ?
-. Ajoutez les commentaires vus en dev.
-. Cherchez dans la documentation {maven} les commandes permettant de générer une documentation javadoc, et les adaptions à faire sur votre projet (et éventuellement `pom.xml`) afin que {maven} génère la documentation automatiquement pour vous.
-. Documentez votre projet: remplacez le contenu de ce fichier README.doc par les instructions de compilation, de documentation et de lancement de votre projet. 
