@@ -18,8 +18,8 @@
        <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
+            <source>11</source>
+            <target>11</target>
         </configuration>
       </plugin>
       <plugin>
@@ -28,7 +28,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>HelloJava</mainClass>
+              <mainClass>ProgrammeEtudiant</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -38,9 +38,17 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.3.2</version>
         <configuration> 
-          <source>8</source> 
+          <source>11</source> 
           <doclint>none</doclint>
         </configuration>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+			  </executions>
       </plugin>
     </plugins>
   </build>
